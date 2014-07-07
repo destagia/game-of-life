@@ -1,4 +1,4 @@
 collections
 ===========
 
-My past works
+this program tell you the most suitable payment.
