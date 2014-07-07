@@ -2,10 +2,7 @@ package tagia
 
 object Matrix {
 
-  /* �t�B�[���h�����o�[ */
   var Matrix = Seq(Seq(0))
-
-  /* ���\�b�h */
 
   def makeMatrix(x: Int, y: Int) = {
     
