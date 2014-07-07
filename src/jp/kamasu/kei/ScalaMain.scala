@@ -2,10 +2,10 @@ package tagia
 
 object Matrix {
 
-  /* ƒtƒB[ƒ‹ƒhƒƒ“ƒo[ */
+  /* ï¿½tï¿½Bï¿½[ï¿½ï¿½ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½oï¿½[ */
   var Matrix = Seq(Seq(0))
 
-  /* ƒƒ\ƒbƒh */
+  /* ï¿½ï¿½ï¿½\ï¿½bï¿½h */
 
   def makeMatrix(x: Int, y: Int) = {
     
@@ -45,7 +45,9 @@ object Matrix {
 
   def retrans() = {
     def trans(matrix: Seq[Seq[Int]]): Seq[Seq[Int]] = {
-      for (row <- 0 until matrix.size) yield for (col <- 0 until matrix.size) yield getNextCellState(matrix(row)(col), getNeighborsState(row, col, matrix))
+      for (row <- 0 until matrix.size) 
+        yield for (col <- 0 until matrix.size) 
+          yield getNextCellState(matrix(row)(col), getNeighborsState(row, col, matrix))
     }
     Matrix = trans(Matrix)
   }
