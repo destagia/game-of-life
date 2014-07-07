@@ -28,17 +28,13 @@ public class Window extends JFrame implements MouseListener {
 
 	boolean isFirst = true;
 
-	// �R���X�g���N�^
 	Window() {
 
-		// �E�B���h�E�̃v���p�e�B
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(240, 300);
 		setLocationRelativeTo(null);
-		// setLayout(new FlowLayout());
 		setLayout(null);
 
-		// �p�l���̃v���p�e�B
 		panel = (JPanel) this.getContentPane();
 		panel.setBounds(0, 0, 240, 300);
 		panel.setBackground(Color.WHITE);
